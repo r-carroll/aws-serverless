@@ -7,11 +7,12 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Runtime: nodejs12.x
-      CodeUri: ./api
+      CodeUri: s3://ryan-library-artifacts/d0d47de1c4d156b6ddd07f6f0be69d5d
       Handler: books.handler
       Environment:
         Variables:
-          TABLE_NAME: !Ref BookTable2
+          TABLE_NAME:
+            Ref: BookTable2
       Policies: AmazonDynamoDBFullAccess
       Events:
         AddBook:

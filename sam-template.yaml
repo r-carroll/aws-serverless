@@ -4,7 +4,7 @@ Resources:
   MyLambdaFunction:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       Handler: index.handler
       CodeUri:
         Bucket: ryan-lambda-test

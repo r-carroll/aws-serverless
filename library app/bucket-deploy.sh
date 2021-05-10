@@ -1,0 +1,1 @@
+sam deploy --template-file s3-bucket-template.yaml --stack-name library-bucket
