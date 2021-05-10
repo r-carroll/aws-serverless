@@ -29,3 +29,9 @@ Resources:
           Properties:
             Path: /books/{id}
             Method: any
+Globals:
+  Api:
+    Cors:
+      AllowMethods: "'*'"
+      AllowHeaders: "'*'"
+      AllowOrigin: "'*'"
